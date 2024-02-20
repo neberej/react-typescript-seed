@@ -16,7 +16,7 @@ const config: Config = {
     ],
   },
   setupFilesAfterEnv: [
-    "<rootDir>/tests/setupTests.ts"
+    "<rootDir>/configs/setupTests.ts"
   ],
 };
 
