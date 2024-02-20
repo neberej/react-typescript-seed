@@ -12,12 +12,17 @@ const config: Configuration = {
     rules: [
       {
         test: /.tsx?$/,
-        use: "ts-loader",
+        use: [{
+          loader: 'ts-loader',
+          options: {
+            configFile: "configs/tsconfig.webpack.json"
+          }
+        }],
         exclude: /node_modules/,
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        use: ["style-loader", "css-loader","postcss-loader"],
       },
     ],
   },
@@ -37,6 +42,13 @@ const config: Configuration = {
     new CopyWebpackPlugin({
       patterns: [{ from: "public" }],
     }),
+    new CopyWebpackPlugin({ 
+      patterns: [ 
+        {  
+          from: './public/favicon.ico'
+        },
+      ]
+    })
   ],
 };
 
