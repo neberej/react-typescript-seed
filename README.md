@@ -8,10 +8,11 @@ Features:
 - Webpack 5
 - React 18
 - Express 4 (Optional)
+- Tailwind
 
 Sub-Features:
 
-- Fully configured for testing
+- Fully configured for testing using Jest
 - Eslint setup
 
 ---
