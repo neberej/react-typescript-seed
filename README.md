@@ -9,6 +9,10 @@ Features:
 - React 18
 - Express 4 (Optional)
 
+Sub-Features:
+
+- Fully configured for testing
+- Eslint setup
 
 ---
 
@@ -26,12 +30,25 @@ npm run dev
 npm run build
 ```
 
-### Run front-end
+### Run Back-end
 
 ```
 npm run server
 ```
 
+
+### Run Test
+
+```
+npm run test
+```
+
+
+### Run Eslint
+
+```
+npm run lint
+```
 
 
 
